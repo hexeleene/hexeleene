@@ -9,3 +9,5 @@
 [![Android Studio](https://img.shields.io/badge/Android_Studio-000000?style=for-the-badge&logo=AndroidStudio&logoColor=34a853)](https://developer.android.com/studio)
 [![Postman](https://img.shields.io/badge/Postman-000000?style=for-the-badge&logo=Postman&logoColor=e05320)](https://www.postman.com/)
 [![DevTools](https://img.shields.io/badge/DevTools-000000?style=for-the-badge&logo=googlechrome&logoColor=1E90FF)](https://developer.chrome.com/docs/devtools?hl=ru)
+[![Swagger](https://img.shields.io/badge/Swagger-000000?style=for-the-badge&logo=Swagger&logoColor=89bf04)](https://swagger.io/)
+![SQL](https://img.shields.io/badge/SQL-000000?style=for-the-badge&logo=SQL&logoColor=89bf04)
