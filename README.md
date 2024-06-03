@@ -2,6 +2,23 @@
 Я QA Engineer, а еще я считаю, что краткость - сестра таланта.
 ## My CV
 ## Портфолио
+
+<details>
+<summary>Тестовая документация</summary>
+Чек листы <br>
+Тест кейсы <br>
+Баг-репорты <br>
+Mind Maps <br>
+</details>
+<details>
+<summary>Коллекция в Postman</summary>
+Название проекта
+</details>
+<details>
+<summary>SQL запросы</summary>
+Название проекта
+</details>
+
 ## Навыки и технологии
 [![Figma](https://img.shields.io/badge/Figma-000000?style=for-the-badge&logo=figma&logoColor=5551FF)](https://www.figma.com/)
 [![Charles](https://img.shields.io/badge/Charles-000000?style=for-the-badge&logo=charles&logoColor=bbddee)](https://www.charlesproxy.com/)
