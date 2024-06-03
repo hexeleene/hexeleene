@@ -2,7 +2,7 @@
 Я QA Engineer, а еще я считаю, что краткость - сестра таланта.
 ## My CV
 ## Портфолио
-## Инструменты и технологии
+## Навыки и технологии
 [![Figma](https://img.shields.io/badge/Figma-000000?style=for-the-badge&logo=figma&logoColor=5551FF)](https://www.figma.com/)
 [![Charles](https://img.shields.io/badge/Charles-000000?style=for-the-badge&logo=charles&logoColor=bbddee)](https://www.charlesproxy.com/)
 [![YouTrack](https://img.shields.io/badge/YouTrack-000000?style=for-the-badge&logo=youtrack&logoColor=bbddee)](https://www.jetbrains.com/ru-ru/youtrack/)
