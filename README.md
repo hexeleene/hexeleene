@@ -16,7 +16,8 @@
 Чек листы <br>
 Тест кейсы <br>
 Баг-репорты <br>
-Mind Maps <br>
+
+  [Mind Maps](Projects/MindMaps/README.md) <br>
 </details>
 <details>
 <summary>Коллекция в Postman</summary>
