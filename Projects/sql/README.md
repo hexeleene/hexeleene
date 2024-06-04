@@ -178,5 +178,78 @@ FROM invoice
 WHERE CAST(invoice_date AS date) BETWEEN '2009-09-01' AND '2009-09-30' AND customer_id in (11, 13, 44, 36, 48, 52, 54, 56);
 
 ```
+## Применение оператора GROUP BY
+1. Выгрузка суммы общей выручки, количества заказов, средней выручки для каждого города США.
 
+  ```
+SELECT billing_city,
+      SUM (total),
+      AVG (total),
+      COUNT (customer_id)
+FROM invoice
+WHERE billing_country = 'USA'
+GROUP BY billing_city;
 
+```
+## Сортировка данных
+1. Выгрузка пятерых самых активных клиентов в США с 25 мая 2011 по 25 сентября 2011.
+
+  ```
+SELECT  customer_id, COUNT(customer_id)
+FROM invoice
+WHERE CAST (invoice_date AS date) BETWEEN '2011-05-25' AND '2011-09-25'
+AND billing_country = 'USA'
+GROUP BY customer_id
+ORDER BY COUNT (customer_id) DESC
+LIMIT 5;
+
+```
+
+## Применение оператора HAVING
+1. Выгрузка общей суммы выручки за каждый день месяца в сентябре 2011 года и общей суммы выручки. В таблицу должны входить только те значения суммы, которые больше 1 и меньше 10.
+
+  ```
+SELECT SUM(total),
+       CAST(invoice_date AS date)
+FROM invoice
+WHERE CAST(invoice_date AS date)BETWEEN '2011-09-01'AND '2011-09-30'
+GROUP BY invoice_date
+HAVING SUM(total)>1
+      AND SUM (total)<10;
+
+```
+
+## Оператор INNER JOIN
+1. Объединение данных двух таблиц: `track` и `invoice_line`.
+> Условия: <br>
+> - Выгрузка таблицы, в которой названию трека будет соответствовать его стоимость.<br>
+> - Если какой-либо из треков не покупали или у купленного трека нет названия — такие записи не должны войти в таблицу.<br>
+> - в итоговую таблицу входят первые 20 записей.
+
+  ```
+SELECT DISTINCT t.name,
+	   i.unit_price
+FROM track AS t
+INNER JOIN invoice_line AS i ON t.track_id = i.track_id
+WHERE i.quantity IS NOT NULL
+     OR t.name IS NOT NULL
+LIMIT 20;
+
+```
+
+## Операторы LEFT OUTER JOIN и RIGHT OUTER JOIN
+1. Выгрузка таблицы из двух полей: первое поле с фамилией сотрудника, второе — с количеством пользователей, чьи запросы этот сотрудник обработал.
+> Условия: <br>
+> - Назвать поля employee_last_name и all_customers соответственно.<br>
+> - Сгруппировать записи по идентификатору сотрудника.<br>
+> - Отсортировать количество пользователей по убыванию.
+
+```
+ELECT s.last_name AS employee_last_name,
+COUNT(c.customer_id) AS all_customers
+FROM staff AS s
+LEFT OUTER JOIN client AS c ON s.employee_id = c.support_rep_id
+GROUP BY s.employee_id
+ORDER BY all_customers DESC;
+
+```
