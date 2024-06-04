@@ -25,7 +25,8 @@ Mind Maps <br>
 <details>
 <summary>SQL запросы</summary>
 
-  [жмякни сюда](Projects/sql/README.md)
+  [SQL запросы](Projects/sql/README.md)<br>
+  [Проект:задания](Projects/sql-project/README.md)
 </details>
 
 ## Проекты
