@@ -157,3 +157,26 @@ WHERE milliseconds > 250000
      AND composer IS NULL;
 
 ```
+
+## Применение агрегирующих функций
+1. Выгрузка:<br>
+- минимального и максимального значения поля `total`<br>
+- среднее значение поля `total`<br>
+- количество уникальных идентификаторов покупателей из поля `customer_id`<br>
+- суммарная выручка.<br>
+> Доп. условия:<br>
+> - покупатели с идентификаторами 11, 13, 44, 36, 48, 52, 54, 56.<br>
+> - заказы, оформленные в сентябре 2009 года.
+
+  ```
+SELECT MIN(total),
+       MAX(total),
+       AVG (total),
+       SUM (total),
+       COUNT (DISTINCT customer_id)
+FROM invoice
+WHERE CAST(invoice_date AS date) BETWEEN '2009-09-01' AND '2009-09-30' AND customer_id in (11, 13, 44, 36, 48, 52, 54, 56);
+
+```
+
+
