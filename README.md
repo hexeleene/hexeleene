@@ -24,7 +24,8 @@ Mind Maps <br>
 </details>
 <details>
 <summary>SQL запросы</summary>
-Название проекта
+
+  [жмякни сюда](Projects/sql/README.md)
 </details>
 
 ## Проекты
