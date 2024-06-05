@@ -13,11 +13,11 @@
 
 <details>
 <summary>Тестовая документация</summary>
-Чек листы <br>
+
+[Чек листы](https://docs.google.com/spreadsheets/d/1byNhcX4AYMVIRBZcDAifHdzkH_T6Z-vUrkMtKs5reNw/edit?usp=sharing) <br>
 Тест кейсы <br>
 Баг-репорты <br>
-
-  [Mind Maps](Projects/MindMaps/README.md) <br>
+[Mind Maps](Projects/MindMaps/README.md) <br>
 </details>
 <details>
 <summary>Коллекция в Postman</summary>
