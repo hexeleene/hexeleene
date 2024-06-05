@@ -15,7 +15,7 @@
 <summary>Тестовая документация</summary>
 
 [Чек листы](https://docs.google.com/spreadsheets/d/1byNhcX4AYMVIRBZcDAifHdzkH_T6Z-vUrkMtKs5reNw/edit?usp=sharing) <br>
-Тест кейсы <br>
+[Тест кейсы](https://docs.google.com/spreadsheets/d/1aHv3_DnOwp67YQy2P5e-N1auUEzonfHknXf3NJiFAOo/edit?usp=sharing) <br>
 Баг-репорты <br>
 [Mind Maps](Projects/MindMaps/README.md) <br>
 </details>
