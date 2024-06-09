@@ -22,7 +22,7 @@
 <details>
 <summary>Коллекция в Postman</summary>
 
-[Коллекция в Postman](Projects/bugs/README.md)
+[Коллекция в Postman](Projects/Postman/README.md)
 </details>
 <details>
 <summary>SQL запросы</summary>
